@@ -1,6 +1,9 @@
 *{
     margin: 0;
+    --accent-font: "Bilbo", cursive;
+--reg-font: "Montserrat", sans-serif;
 }
+
 .body::-webkit-scrollbar {
     display: none;
   }
@@ -31,8 +34,7 @@ video{
 .video-chat{
     flex-grow: 1;
     display: flex;
-   
-    background-color: #A5AE9E;
+    background-color: #596475;
     justify-content: center;
     align-items: center;
     padding: 40px;
@@ -104,4 +106,33 @@ ul{
 }
 .message{
     color: white;
+}
+.header{
+    display:  flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #373F51 ;
+    padding: 10px;
+    color: white;
+}
+.title{
+    font-size: 26px;
+    font-family: var(--accent-font);
+}
+.menu{
+    display: flex;
+    font-family: var(--reg-font);
+    justify-content: space-around;
+    cursor: pointer;
+
+}
+.fab{
+    font-size: 24px;
+    color: white;
+}
+.title{
+   flex: 0.7;
+}
+.menu{
+    flex: 0.3;
 }
