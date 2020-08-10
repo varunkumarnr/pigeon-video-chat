@@ -5,19 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pigeon</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
     <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
     <script src="/socket.io/socket.io.js" defer></script>
-    <script src="script.js" defer></script>
+    <script  src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         const ROOM_ID = "<% roomId %>"
         console.log(ROOM_ID)
     </script>
 </head>
 <body>
-    <div id="video-grid">
-
-    </div>
-    
    
+    <div class="main-view">
+        <div class="main-view-left">
+            <div class="video-chat">
+            <div id="video-grid">
+
+            </div>
+        </div>
+            <div class="main-view-controls">
+                <div  class="main-controls-block ">
+                            <div onclick="muteandmute()" class="main-controls-button main_mute">
+                                <i class="fas fa-microphone"></i>
+                                <span>Mute</span>
+                            </div>
+                            <div onclick="PlayandStopVideo()" class="main-controls-button main_video">
+                                <i class="fa fa-video-slash"></i>
+                                <span>Stop video</span>
+                            </div>
+                </div>
+                <div  class="main-controls-block">
+                    <div class="main-controls-button ">
+                        <i class="fas fa-grin-hearts"></i>
+                        <span>Filters</span>
+                    </div>
+                    <div class="main-controls-button">
+                        <i class="fas fa-user-friends"></i>
+                        <span>Participents</span>
+                    </div>
+                    <div class="main-controls-button">
+                        <i class="fas fa-comment"></i>
+                        <span>Chat</span>
+                    </div>
+        </div>
+        <div class="main-controls-block">
+            <div class="main-controls-button">
+
+                <span class="leave">Leave Meeting</span>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="main-view-right">
+            <div class="mainheader">
+                <h6>chat</h6>
+            </div>
+            <div class="chat-screen">
+                <ul class="messages">
+                      
+                </ul>
+            </div>
+            <div class="message-input-container">
+                <input id="chat-messages" type="text" placeholder="Type message here ..." >
+
+            </div>
+           
+        </div>
+    </div>   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
