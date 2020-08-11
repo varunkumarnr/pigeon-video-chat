@@ -8,7 +8,7 @@ NO login are database needed
 ## Deploy information 
 Deployed using firebase :  tranquil-spire-85474.herokuapp.com/
 
-[<img alt='Sample 1'  src=''/>](tranquil-spire-85474.herokuapp.com/)
+[<img alt='Sample 1'  src='https://github.com/varunkumarnr/pigeon-video-chat/blob/master/public/images/testimg.jpg'/>](tranquil-spire-85474.herokuapp.com/)
 
 
 ## App features 
